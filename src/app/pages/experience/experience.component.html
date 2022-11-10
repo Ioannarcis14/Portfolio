@@ -1,0 +1,56 @@
+<div [id]="'fullContent'">
+  <div [class]="'body'">
+    <div [id]="'background'"></div>
+
+    <app-social-media></app-social-media>
+    <app-header-nav></app-header-nav>
+
+    <div [class]="'container fullContent'">
+
+      <div [class]="'content'">
+        <div [class]="'textContent'">
+          <div>
+            <h1>I've worked for...</h1>
+
+            <div [class]="'flex'">
+              <div *ngFor="let exp of Experience; let index = index" [class]="'accordion-div'">
+                <cdk-accordion [class]="'example-accordion'" >
+                  <cdk-accordion-item
+                    #accordionItem="cdkAccordionItem"
+                    [class]="'example-accordion-item'"
+                    role="button"
+                    tabindex="0"
+                    [attr.id]="'accordion-header-' + index"
+                    [attr.aria-expanded]="accordionItem.expanded"
+                    [attr.aria-controls]="'accordion-body-' + index">
+
+                    <div [class]="'example-accordion-item-header'" (click)="accordionItem.toggle()">
+                      {{ exp.name }}
+                      <span [class]="'example-accordion-item-description'">
+                        Click to {{ accordionItem.expanded ? 'close' : 'open' }}
+                      </span>
+                    </div>
+
+                    <div
+                      [class]="'example-accordion-item-body'"
+                      role="region"
+                      [style.display]="accordionItem.expanded ? '' : 'none'"
+                      [attr.id]="'accordion-body-' + index"
+                      [attr.aria-labelledby]="'accordion-header-' + index">
+                      <span [class]="'date'">{{ exp.date }}</span>
+                      <ul [class]="'experience'">
+                        <li *ngFor="let c of exp.cargo"> {{ c }}</li>
+                      </ul>
+                    </div>
+                  </cdk-accordion-item>
+                </cdk-accordion>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

@@ -1,0 +1,39 @@
+<div [id]="'fullContent'">
+  <div [class]="'body'">
+    <div [id]="'background'"></div>
+
+    <app-social-media></app-social-media>
+    <app-header-nav></app-header-nav>
+
+    <div [class]="'container fullContent'">
+
+      <div [class]="'content'">
+        <div [class]="'textContent'">
+          <h1>Some Things I’ve Built</h1>
+
+
+          <div [class]="'flex projects'" *ngFor="let item of projects; let idx = index">
+            <img [src]="item.image">
+            <div [class]="'flexCont even'">
+              <h2>{{ item.title }}</h2>
+              <div [class]="'textZone'">
+                <p *ngFor="let p of item.content">
+                  {{ p }}
+                </p>
+              </div>
+            </div>
+
+
+
+          </div>
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

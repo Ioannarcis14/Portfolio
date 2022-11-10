@@ -1,0 +1,253 @@
+@font-face {
+  font-family: 'Julius'; /*a name to be used later*/
+  src: url('/assets/fonts/JuliusSansOne-Regular.ttf');
+}
+
+@font-face {
+  font-family: "Armata";
+  src: url("/assets/fonts/Armata-Regular.ttf");
+}
+
+div#fullContent {
+
+
+  div.body {
+    div#background {
+      background-image: url("/assets/img/pngegg.png");
+
+      width: 400px;
+      height: 500px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      -moz-transform: scale(-1, -1);
+      -o-transform: scale(-1, -1);
+      -webkit-transform: scale(-1, -1);
+      transform: scale(-1, -1);
+      opacity: 0.1;
+    }
+  }
+
+  #geometric {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0.7;
+  }
+
+  #geometric2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    -moz-transform: scale(-1, -1);
+    -o-transform: scale(-1, -1);
+    -webkit-transform: scale(-1, -1);
+    transform: scale(-1, -1);
+    opacity: 0.1;
+  }
+
+  div.content {
+    width: 100%;
+    padding-top: 150px;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
+    z-index: 1;
+
+    div.textContent {
+
+      span.date {
+        color: #D4D8E5;
+      }
+
+      ul.experience {
+        margin-top: 10px;
+      }
+
+      .flex {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 100px;
+      }
+
+      .accordion-div {
+        padding: 180px 0px 0px 0px;
+        cdk-accordion {
+
+          color: white;
+
+          cdk-accordion-item {
+            border: 0px solid black;
+
+            div.example-accordion-item-header {
+              background-color: black;
+            }
+          }
+        }
+      }
+
+
+      .example-accordion {
+        display: block;
+        max-width: 500px;
+      }
+
+      .example-accordion-item {
+        display: block;
+        border: solid 1px #ccc;
+      }
+
+      .example-accordion-item + .example-accordion-item {
+        border-top: none;
+      }
+
+      .example-accordion-item-header {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+      }
+
+      .example-accordion-item-description {
+        font-size: 0.85em;
+        color: #999;
+      }
+
+      .example-accordion-item-header,
+      .example-accordion-item-body {
+        padding: 16px;
+      }
+
+      .example-accordion-item-header:hover {
+        cursor: pointer;
+        background-color: #eee;
+      }
+
+      .example-accordion-item:first-child {
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+      }
+
+      .example-accordion-item:last-child {
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+      }
+
+      div.picture {
+        img {
+          position: relative;
+          max-width: 300px;
+          border-radius: 3px;
+
+          box-shadow: rgba(248, 194, 58, 0.4) 5px 5px, rgba(246, 187, 38, 0.3) 10px 10px, rgba(255, 181, 0, 0.2) 15px 15px, rgba(255, 146, 0, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;        }
+      }
+
+
+      h1 {
+        margin: 0px;
+        color: #ffd05b;
+        font-size: clamp(40px, 8vw, 80px);
+      }
+
+      h1.secondary {
+        color: #D4D8E5;
+        font-size: clamp(40px, 8vw, 65px);
+        opacity: 1;
+        z-index: 1;
+
+      }
+
+      p {
+        color: #D4D8E5;
+        margin: 20px 0px 0px;
+        max-width: 540px;
+      }
+
+      ul {
+        margin: 5px 0px 0px;
+        overflow: hidden;
+        list-style: none;
+        display: grid;
+        gap: 0px 10px;
+        position: relative;
+
+        li {
+          color: #D4D8E5;
+        }
+
+        li::before {
+          content: "▹";
+          left: 0px;
+          margin-right: 20px;
+          color: #ffd05b;
+          font-size: 20px;
+          line-height: 12px;
+        }
+      }
+    }
+  }
+}
+
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -40%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInRotate {
+  from {
+    opacity: 0.7;
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 10px, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0.1;
+    transform: translate3d(0, +20%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0%, 10px);
+  }
+}
