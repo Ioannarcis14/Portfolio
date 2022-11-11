@@ -1,16 +1,8 @@
-@font-face {
-  font-family: 'Julius'; /*a name to be used later*/
-  src: url('/assets/fonts/JuliusSansOne-Regular.ttf');
-}
 
-@font-face {
-  font-family: "Armata";
-  src: url("/assets/fonts/Armata-Regular.ttf");
-}
 
 div#fullContent {
     div#background {
-      background-image: url("/assets/img/pngegg.png");
+      background-image: url("Portfolio/assets/img/pngegg.png");
       width: 400px;
       height: 500px;
       position: absolute;
