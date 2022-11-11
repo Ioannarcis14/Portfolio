@@ -13,6 +13,20 @@ aside {
     list-style: none;
     animation: fadeInUp 1s ease-in both;
 
+    .hide {
+      display: none;
+      position: absolute;
+      width: 100px;
+      margin: -27px 40px;
+    }
+
+    .whatsapp:hover + .hide {
+      display: block;
+      color: #ffd05b;
+      position: absolute;
+      width: 200px;
+      animation: fadeInLeft 1s ease-in both;
+    }
 
     li {
       padding: 10px 0px;
@@ -63,6 +77,18 @@ aside {
       li {
         padding: 0px 10px;
       }
+
+      .whatsapp:hover + .hide {
+        animation: fadeIn 1s ease-in both;
+      }
+
+      .hide {
+        display: none;
+        position: absolute;
+        width: 100px;
+        margin: 5px 0px;
+      }
+
     }
 
     ul::before {
@@ -77,6 +103,7 @@ aside {
     ul::after {
       content: none;
     }
+
 
 
   }

@@ -13,6 +13,14 @@ div#fullContent {
   height: 100%;
   scroll-behavior: smooth;
 
+  div#desktop {
+    display: block;
+  }
+
+  div#mobile {
+    display: none;
+  }
+
   div.body {
     min-height: 100%;
 
@@ -264,4 +272,52 @@ div#fullContent {
     opacity: 1;
     transform: translate3d(0, 0%, 10px);
   }
+}
+
+@media (max-width: 1100px) {
+  div#fullContent{
+    div.body{
+      div#desktop {
+        display: none;
+      }
+
+      div#mobile {
+        display: block;
+        padding-top: 100px;
+
+        div.content {
+          div.textContent {
+            div.projects {
+              display: block;
+
+              img {
+                width: 100%;
+                box-shadow: none;
+                animation: fadein 1.0s ease-in both;
+              }
+
+              .flexCont {
+                align-items: start;
+                animation: fadein 1.0s ease-in both;
+
+              }
+              div.textZone {
+                margin-left: 0px;
+                text-align: left;
+              }
+            }
+          }
+        }
+      }
+
+      div#background {
+        width: 300px;
+        height: 250px;
+      }
+    }
+  }
+
+
+
+
 }

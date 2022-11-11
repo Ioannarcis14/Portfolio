@@ -2,7 +2,7 @@
   <div [class]="'body'">
     <div [id]="'background'"></div>
 
-    <app-social-media></app-social-media>
+
     <app-header-nav></app-header-nav>
 
     <div [class]="'container fullContent'">
@@ -12,13 +12,11 @@
           <div>
             <h1>About me</h1>
             <p>
-              Hello! My name is Ioan and I enjoy creating things that live on the internet. My interest in web development started back in 2012 when I decided to try editing custom Tumblr themes — turns out hacking together a custom reblog button taught me a lot about HTML & CSS!
-              Fast-forward to today, and I’ve had the privilege of working at an advertising agency, a start-up, a huge corporation, and a student-led design studio. My main focus these days is building accessible, inclusive products and digital experiences at Upstatement for a variety of clients.
-            </p>
+              Hello! My name is Ioan and I started programming when I was 17 years old, currently I can develop: web pages, e-commerce, programs and I can design pixel perfect webs.
+              I also participate in events like the Hackathon, specifically the one called Lleida Hackeps and I'm also developing projects on my own.
             <p>
-              I also recently launched a course that covers everything you need to build a web app with the Spotify API using Node & React.
-              Here are a few technologies I’ve been working with recently:
-            </p>
+              These would be the knowledge that I have, taking for granted some concepts such as GIT, use of Database, Agile... In any case, there is a list on my Linkedin.
+          </p>
 
             <ul>
               <li *ngFor="let lang of languages">{{ lang }}</li>
@@ -29,6 +27,7 @@
           </div>
         </div>
       </div>
+      <app-social-media></app-social-media>
     </div>
   </div>
 </div>

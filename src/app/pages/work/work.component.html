@@ -2,15 +2,14 @@
   <div [class]="'body'">
     <div [id]="'background'"></div>
 
-    <app-social-media></app-social-media>
     <app-header-nav></app-header-nav>
 
-    <div [class]="'container fullContent'">
-
+    <div [class]="'container fullContent'" [id]="'desktop'">
       <div [class]="'content'">
         <div [class]="'textContent'">
           <h1>Some Things I’ve Built</h1>
 
+          <h3 [class]="'pt-3 text-danger'"> - Currently page under developing (demo projects) - </h3>
 
           <div [class]="'flex projects'" *ngFor="let item of projects; let idx = index">
             <img [src]="item.image">
@@ -22,18 +21,34 @@
                 </p>
               </div>
             </div>
-
-
-
           </div>
-
-
-
-
-
         </div>
       </div>
     </div>
+
+    <div [class]="'container fullContent'" [id]="'mobile'">
+      <div [class]="'content'">
+        <div [class]="'textContent'">
+          <h1>Some Things I’ve Built</h1>
+
+          <h3 [class]="'pt-3 text-danger'"> Currently page under developing (demo projects)</h3>
+
+            <div [class]="'flex projects'" *ngFor="let item of projects; let idx = index">
+
+              <div [class]="'flexCont even'">
+                <h2>{{ item.title }}</h2>
+                <div [class]="'textZone'">
+                  <p *ngFor="let p of item.content">
+                    {{ p }}
+                  </p>
+                </div>
+              </div>
+              <img [src]="item.image" [class]="'py-5'">
+            </div>
+        </div>
+      </div>
+    </div>
+    <app-social-media></app-social-media>
   </div>
 </div>
 

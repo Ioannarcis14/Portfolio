@@ -1,10 +1,10 @@
-<nav role="navigation" id="nav_anim">
-  <div id="menuToggle">
-    <input type="checkbox" />
+<nav role="navigation" [id]="'nav_anim'">
+  <div [id]="'menuToggle'">
+    <input [type]="'checkbox'" [id]="'cross'"/>
     <span></span>
     <span></span>
     <span></span>
-    <ul id="menu" class="nav nav-pills">
+    <ul [id]="'menu'" [class]="'nav nav-pills'">
       <li [class]="'nav-item'"><a [routerLink]="'/home'" [class]="'nav-link headerText'" [routerLinkActive]="'active'">Home</a></li>
       <li [class]="'nav-item'"><a [routerLink]="'/about'" [class]="'nav-link headerText'" [routerLinkActive]="'active'" aria-current="page">About</a></li>
       <li [class]="'nav-item'"><a [routerLink]="'/work'" [class]="'nav-link headerText'" [routerLinkActive]="'active'">Work</a></li>
@@ -19,19 +19,17 @@
       <span [class]="'fs-4'">Matei, Ioan Narcis</span>
     </a>
 
-    <ul class="nav nav-pills hidded" id="ul_links">
+    <ul class="nav nav-pills hidded" [id]="'ul_links'">
       <li [class]="'nav-item'"><a [routerLink]="'/about'" [class]="'nav-link headerText'" [routerLinkActive]="'active'" aria-current="page">About</a></li>
       <li [class]="'nav-item'"><a [routerLink]="'/work'" [class]="'nav-link headerText'" [routerLinkActive]="'active'">Work</a></li>
       <li [class]="'nav-item'"><a [routerLink]="'/experience'" [class]="'nav-link headerText'" [routerLinkActive]="'active'">Experience</a></li>
     </ul>
 
     <nav class="navbar navbar-dark">
-      <button (click)="showNav()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button (click)="showNav()" [class]="'navbar-toggler'" [type]="'button'" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
     </nav>
-
-
 
 
 

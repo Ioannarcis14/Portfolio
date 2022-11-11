@@ -89,6 +89,7 @@ div#header_desktop {
   nav#nav_anim {
     display: block;
   }
+
   #menuToggle {
     display: flex;
     flex-direction: column;
@@ -141,7 +142,7 @@ div#header_desktop {
   {
     opacity: 1;
     transform: rotate(45deg) translate(-3px, -1px);
-    background: #36383F;
+    background: #c94722;
   }
   #menuToggle input:checked ~ span:nth-last-child(3)
   {
@@ -178,6 +179,10 @@ div#header_desktop {
   #menuToggle input:checked ~ ul
   {
     transform: none;
+
+    input#cross {
+      color: #ffd05b;
+    }
   }
 
 }
