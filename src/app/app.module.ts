@@ -14,6 +14,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {CdkAccordionModule} from '@angular/cdk/accordion';
 import { HeaderNavComponent } from './sections/header-nav/header-nav.component';
 import { SocialMediaComponent } from './sections/social-media/social-media.component';
+import { ModalComponent } from './sections/modal/modal.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { SocialMediaComponent } from './sections/social-media/social-media.compo
     WorkComponent,
     ExperienceComponent,
     HeaderNavComponent,
-    SocialMediaComponent
+    SocialMediaComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,

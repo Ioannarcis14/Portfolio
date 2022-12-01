@@ -6,7 +6,7 @@ import { ExperienceComponent } from "./pages/experience/experience.component";
 import { WorkComponent } from "./pages/work/work.component";
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', redirectTo: 'home',pathMatch: 'full'},
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'experience', component: ExperienceComponent },
@@ -14,7 +14,8 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { useHash: true, relativeLinkResolution: 'legacy'})],
+  // imports: [RouterModule.forRoot(routes, { useHash: true, relativeLinkResolution: 'legacy'})],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

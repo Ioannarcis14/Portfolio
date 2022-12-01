@@ -12,6 +12,23 @@ div#fullContent {
     display: none;
   }
 
+  a {
+    .icon {
+      color: #D4D8E5;
+      width: 20px;
+      height: 20px;
+      font-size: 22px;
+    }
+  }
+
+  a:hover {
+    cursor: pointer;
+    .icon {
+      animation: fadeInRotate 1s linear both;
+      color: #ffd05b;
+    }
+  }
+
   div.body {
     min-height: 100%;
 
@@ -81,6 +98,7 @@ div#fullContent {
 
       }
 
+
       .section {
         margin: 90px 0px;
       }
@@ -89,10 +107,13 @@ div#fullContent {
         padding: 50px 0px;
         display: flex;
 
+      a {
+        display: contents;
+
         img {
           width: 50%;
           border-radius: 5px;
-          filter: grayscale(1);
+          filter: blur(2px);
           object-fit: cover;
           box-shadow: 0 10px 30px -15px rgb(2 12 27 / 70%);
         }
@@ -100,6 +121,10 @@ div#fullContent {
         img:hover {
           filter: none;
         }
+      }
+
+
+
 
         div.flexCont {
           display: flex;
@@ -251,6 +276,7 @@ div#fullContent {
   to {
     opacity: 1;
     transform: translate3d(0, 10px, 0);
+    color: #ffd05b;
   }
 }
 
@@ -312,3 +338,4 @@ div#fullContent {
 
 
 }
+

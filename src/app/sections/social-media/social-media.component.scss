@@ -25,12 +25,14 @@ aside {
 
     .hide {
       display: none;
+      cursor: pointer;
       position: absolute;
       width: 100px;
       margin: -27px 40px;
     }
 
-    .whatsapp:hover + .hide {
+     li > a:hover > .whatsapp + .hide {
+      cursor: pointer;
       display: block;
       color: #ffd05b;
       position: absolute;
@@ -42,6 +44,8 @@ aside {
       padding: 10px 0px;
 
       a {
+        cursor: pointer;
+
         .icon {
           color: #D4D8E5;
           width: 20px;
@@ -51,12 +55,11 @@ aside {
       }
 
       a:hover {
+        animation: fadeInRotate 1s linear both;
         .icon {
           color: #ffd05b;
-          animation: fadeInRotate 1s linear both;
 
           svg {
-            animation: fadeInRotate 1s linear both;
 
           }
         }
@@ -88,7 +91,7 @@ aside {
         padding: 0px 10px;
       }
 
-      .whatsapp:hover + .hide {
+      a:hover > whatsapp + .hide {
         animation: fadeIn 1s ease-in both;
       }
 
@@ -119,3 +122,5 @@ aside {
   }
 
 }
+
+
