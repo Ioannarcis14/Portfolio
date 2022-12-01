@@ -18,7 +18,7 @@ export class WorkComponent implements OnInit {
     this.projects = [
       {
         title: "Pickeat (Web)",
-        image: "/assets/img/codeIgniter_w.png",
+        image: "assets/img/codeIgniter_w.png",
         content: [
           "Pickeat is a website to reserve a table or order at home. Pickeat web allows you to create and modify your restaurant and the data it contains.",
           "Made with CodeIgniter"
@@ -27,17 +27,17 @@ export class WorkComponent implements OnInit {
       },
       {
         title: "Pickeat (App)",
-        image: "/assets/img/pickeat_b.png",
+        image: "assets/img/pickeat_b.png",
         content: [
           "Pickeat is a website to reserve a table or order at home. Pickeat App is an application for customers that allows you to place orders, it gets the data from Pickeat Web.",
           "Made with Angular and Ionic"
         ],
         github: "https://github.com/Ioannarcis14/DAW2-Sintesi-APPClient-Matei_Corderroure",
-        video: "/assets/video/Pick_Eat.mp4"
+        video: "assets/video/Pick_Eat.mp4"
       },
       {
         title: "+Cota",
-        image: "/assets/img/mascota_banner.png",
+        image: "assets/img/mascota_banner.png",
         content: [
           "+Cota is an application to be able to find a partner for your pet. You can press the like button for the pets that you like the most." ,
           "Made with Angular and Ionic, Firebase Database"
