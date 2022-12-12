@@ -113,7 +113,7 @@ div#fullContent {
         img {
           width: 50%;
           border-radius: 5px;
-          filter: blur(2px);
+          filter: drop-shadow(2px 4px 6px black);
           object-fit: cover;
           box-shadow: 0 10px 30px -15px rgb(2 12 27 / 70%);
         }
