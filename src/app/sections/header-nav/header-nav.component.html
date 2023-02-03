@@ -1,30 +1,54 @@
 <nav role="navigation" [id]="'nav_anim'">
   <div [id]="'menuToggle'">
+
     <input [type]="'checkbox'" [id]="'cross'"/>
     <span></span>
     <span></span>
     <span></span>
+
     <ul [id]="'menu'" [class]="'nav nav-pills'">
-      <li [class]="'nav-item'"><a [routerLink]="'/home'" [class]="'nav-link headerText'" [routerLinkActive]="'active'">Home</a></li>
-      <li [class]="'nav-item'"><a [routerLink]="'/about'" [class]="'nav-link headerText'" [routerLinkActive]="'active'" aria-current="page">About</a></li>
-      <li [class]="'nav-item'"><a [routerLink]="'/work'" [class]="'nav-link headerText'" [routerLinkActive]="'active'">Work</a></li>
-      <li [class]="'nav-item'"><a [routerLink]="'/experience'" [class]="'nav-link headerText'" [routerLinkActive]="'active'">Experience</a></li>
+      <li [class]="'nav-item'"><a [routerLink]="'/home'" [class]="'nav-link headerText'" [routerLinkActive]="'active'">{{'home' | translate}}</a></li>
+      <li [class]="'nav-item'"><a [routerLink]="'/about'" [class]="'nav-link headerText'" [routerLinkActive]="'active'" aria-current="page">{{'aboutme' | translate}}</a></li>
+      <li [class]="'nav-item'"><a [routerLink]="'/work'" [class]="'nav-link headerText'" [routerLinkActive]="'active'">{{'work' | translate}}</a></li>
+      <li [class]="'nav-item'"><a [routerLink]="'/experience'" [class]="'nav-link headerText'" [routerLinkActive]="'active'">{{'experience' | translate}}</a></li>
+      <li></li>
+
+      <mat-form-field appearance=fill class="mobile">
+        <mat-label>🌐</mat-label>
+        <mat-select #selectedLangs (selectionChange)="switchLanguage (selectedLangs.value)" [(ngModel)]="selectedValue" >
+          <mat-option  *ngFor="let language of translate.getLangs(); let idx = index" [value]="language">
+            {{ Flags[idx] }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
     </ul>
   </div>
 </nav>
 
 <div id="header_desktop">
+
   <header [class]="'d-flex flex-wrap justify-content-center py-3 mb-4 container'"  >
     <a [routerLink]="'/'" [class]="'d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none'">
       <span [class]="'fs-4'">Matei, Ioan Narcis</span>
     </a>
 
-    <ul class="nav nav-pills hidded" [id]="'ul_links'">
-      <li [class]="'nav-item'"><a [routerLink]="'/about'" [class]="'nav-link headerText'" [routerLinkActive]="'active'" aria-current="page">About</a></li>
-      <li [class]="'nav-item'"><a [routerLink]="'/work'" [class]="'nav-link headerText'" [routerLinkActive]="'active'">Work</a></li>
-      <li [class]="'nav-item'"><a [routerLink]="'/experience'" [class]="'nav-link headerText'" [routerLinkActive]="'active'">Experience</a></li>
-    </ul>
 
+
+    <ul class="nav nav-pills hidded" [id]="'ul_links'">
+      <li>
+        <!--        <select class="form-select nav-item translation " #selectedLang (change)="switchLanguage (selectedLang.value)">-->
+        <!--          <option *ngFor="let language of translate.getLangs(); let idx = index" [value]="language" [selected]="language === translate.currentLang">-->
+        <!--            {{ Flags[idx] }}-->
+        <!--          </option>-->
+        <!--        </select>-->
+      </li>
+
+      <li [class]="'nav-item'"><a [routerLink]="'/about'" [class]="'nav-link headerText'" [routerLinkActive]="'active'" aria-current="page">{{'aboutme' | translate}}</a></li>
+      <li [class]="'nav-item'"><a [routerLink]="'/work'" [class]="'nav-link headerText'" [routerLinkActive]="'active'">{{'work' | translate}}</a></li>
+      <li [class]="'nav-item'"><a [routerLink]="'/experience'" [class]="'nav-link headerText'" [routerLinkActive]="'active'">{{'experience' | translate}}</a></li>
+
+
+    </ul>
     <nav class="navbar navbar-dark">
       <button (click)="showNav()" [class]="'navbar-toggler'" [type]="'button'" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -33,6 +57,13 @@
 
 
 
-
   </header>
- </div>
+</div>
+<mat-form-field appearance=fill class="desktop">
+  <mat-label>🌐</mat-label>
+  <mat-select #selectedLang (selectionChange)="switchLanguage (selectedLang.value)" [(ngModel)]="selectedValue" >
+    <mat-option  *ngFor="let language of translate.getLangs(); let idx = index" [value]="language">
+      {{ Flags[idx] }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>

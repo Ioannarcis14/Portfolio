@@ -9,7 +9,7 @@
       <div [class]="'content'">
         <div [class]="'textContent'">
           <div>
-            <h1>I've worked for...</h1>
+            <h1>{{ "experience_title" | translate }}</h1>
 
             <div [class]="'flex'">
               <div *ngFor="let exp of Experience; let index = index" [class]="'accordion-div'">
@@ -24,7 +24,7 @@
                     [attr.aria-controls]="'accordion-body-' + index">
 
                     <div [class]="'example-accordion-item-header'" (click)="accordionItem.toggle()">
-                      {{ exp.name }}
+                      {{ exp.name | translate }}
                       <span [class]="'example-accordion-item-description'">
                         Click to {{ accordionItem.expanded ? 'close' : 'open' }}
                       </span>
@@ -38,7 +38,7 @@
                       [attr.aria-labelledby]="'accordion-header-' + index">
                       <span [class]="'date'">{{ exp.date }}</span>
                       <ul [class]="'experience'">
-                        <li *ngFor="let c of exp.cargo"> {{ c }}</li>
+                        <li *ngFor="let c of exp.cargo; let idx = index"> {{ c | translate }}</li>
                       </ul>
                     </div>
                   </cdk-accordion-item>

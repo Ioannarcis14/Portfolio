@@ -15,6 +15,11 @@ import {CdkAccordionModule} from '@angular/cdk/accordion';
 import { HeaderNavComponent } from './sections/header-nav/header-nav.component';
 import { SocialMediaComponent } from './sections/social-media/social-media.component';
 import { ModalComponent } from './sections/modal/modal.component';
+import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
+import {HttpClient, HttpClientModule} from "@angular/common/http";
+import {TranslateHttpLoader} from "@ngx-translate/http-loader";
+import {MatSelectModule} from "@angular/material/select";
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -32,11 +37,25 @@ import { ModalComponent } from './sections/modal/modal.component';
     BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     NgxChartsModule,
-    CdkAccordionModule
+    CdkAccordionModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: httpTranslateLoader,
+        deps: [HttpClient]
+      }
+    }),
+    MatSelectModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+export function httpTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}

@@ -141,3 +141,10 @@ body.modal-popup-open {
   }
 }
 
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-form-field-type-mat-select:not(.mat-form-field-disabled) .mat-form-field-flex {
+  background: #fff;
+}

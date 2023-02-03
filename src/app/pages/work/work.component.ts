@@ -17,30 +17,30 @@ export class WorkComponent implements OnInit {
   constructor(private modalService: ModalService) {
     this.projects = [
       {
-        title: "Pickeat (Web)",
+        title: "work_project1_title",
         image: "assets/img/codeIgniter_w.png",
         content: [
-          "Pickeat is a website to reserve a table or order at home. Pickeat web allows you to create and modify your restaurant and the data it contains.",
-          "Made with CodeIgniter"
+          "work_project1_text1",
+          "work_project1_text2"
         ],
         github: "https://github.com/Ioannarcis14/DAW2-Sintesi-Matei_Corderroure"
       },
       {
-        title: "Pickeat (App)",
+        title: "work_project2_title",
         image: "assets/img/pickeat_b.png",
         content: [
-          "Pickeat is a website to reserve a table or order at home. Pickeat App is an application for customers that allows you to place orders, it gets the data from Pickeat Web.",
-          "Made with Angular and Ionic"
+          "work_project2_text1",
+          "work_project2_text2"
         ],
         github: "https://github.com/Ioannarcis14/DAW2-Sintesi-APPClient-Matei_Corderroure",
         video: "assets/video/Pick_Eat.mp4"
       },
       {
-        title: "+Cota",
+        title: "work_project3_title",
         image: "assets/img/mascota_banner.png",
         content: [
-          "+Cota is an application to be able to find a partner for your pet. You can press the like button for the pets that you like the most." ,
-          "Made with Angular and Ionic, Firebase Database"
+          "work_project3_text1" ,
+          "work_project3_text2"
         ],
         github: "https://github.com/Ioannarcis14/PetsIonic"
       },

@@ -10,13 +10,9 @@
       <div [class]="'content'">
         <div [class]="'textContent'">
           <div>
-            <h1>About me</h1>
-            <p>
-              Hello! My name is Ioan and I started programming when I was 17 years old, currently I can develop: web pages, e-commerce, programs and I can design pixel perfect webs.
-              I also participate in events like the Hackathon, specifically the one called Lleida Hackeps and I'm also developing projects on my own.
-            <p>
-              These would be the knowledge that I have, taking for granted some concepts such as GIT, use of Database, Agile... In any case, there is a list on my Linkedin.
-          </p>
+            <h1>{{ "aboutme_title" | translate }}</h1>
+            <p>{{ "aboutme_text" | translate }}</p>
+            <p>{{"aboutme_text2" | translate }}</p>
 
             <ul>
               <li *ngFor="let lang of languages">{{ lang }}</li>

@@ -7,16 +7,16 @@
     <div [class]="'container fullContent'" [id]="'desktop'">
       <div [class]="'content'">
         <div [class]="'textContent'">
-          <h1>Some Things I’ve Built</h1>
+          <h1>{{ "work_title" | translate }}</h1>
 
 
           <div [class]="'flex projects'" *ngFor="let item of projects; let idx = index">
             <a [href]="item.github" [target]="'_blank'"><img [src]="item.image"></a>
             <div [class]="'flexCont even'">
-              <h2>{{ item.title }}</h2>
+              <h2>{{ item.title | translate}}</h2>
               <div [class]="'textZone'">
                 <p *ngFor="let p of item.content">
-                  {{ p }}
+                  {{ p | translate }}
                 </p>
                 <a *ngIf="item.video"><fa-icon [icon]="faFilm" [class]="'icon me-4'" (click)="openModal('modal1')"></fa-icon></a>
                 <a [href]="item.github" [target]="'_blank'"><fa-icon [icon]="faGithub" [class]="'icon'"></fa-icon></a>
@@ -39,14 +39,14 @@
     <div [class]="'container fullContent'" [id]="'mobile'">
       <div [class]="'content'">
         <div [class]="'textContent'">
-          <h1>Some Things I’ve Built</h1>
+          <h1>{{ "work_title" | translate }}</h1>
             <div [class]="'flex projects'" *ngFor="let item of projects; let idx = index">
 
               <div [class]="'flexCont even'">
-                <h2>{{ item.title }}</h2>
+                <h2>{{ item.title | translate }}</h2>
                 <div [class]="'textZone'">
                   <p *ngFor="let p of item.content">
-                    {{ p }}
+                    {{ p | translate }}
                   </p>
                   <a *ngIf="item.video"><fa-icon [icon]="faFilm" [class]="'icon me-4'" (click)="openModal('modal1')"></fa-icon></a>
                   <a [href]="item.github" [target]="'_blank'"><fa-icon [icon]="faGithub" [class]="'icon'"></fa-icon></a>
