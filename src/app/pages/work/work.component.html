@@ -1,64 +1,67 @@
 <div [id]="'fullContent'">
-  <div [class]="'body'">
-    <div [id]="'background'"></div>
+    <div [class]="'body'">
+        <div [id]="'background'"></div>
 
-    <app-header-nav></app-header-nav>
+        <app-header-nav></app-header-nav>
 
-    <div [class]="'container fullContent'" [id]="'desktop'">
-      <div [class]="'content'">
-        <div [class]="'textContent'">
-          <h1>{{ "work_title" | translate }}</h1>
-
-
-          <div [class]="'flex projects'" *ngFor="let item of projects; let idx = index">
-            <a [href]="item.github" [target]="'_blank'"><img [src]="item.image"></a>
-            <div [class]="'flexCont even'">
-              <h2>{{ item.title | translate}}</h2>
-              <div [class]="'textZone'">
-                <p *ngFor="let p of item.content">
-                  {{ p | translate }}
-                </p>
-                <a *ngIf="item.video"><fa-icon [icon]="faFilm" [class]="'icon me-4'" (click)="openModal('modal1')"></fa-icon></a>
-                <a [href]="item.github" [target]="'_blank'"><fa-icon [icon]="faGithub" [class]="'icon'"></fa-icon></a>
-
-                <modal-popup id="modal1">
-                  <video width="100%" height="100%" controls>
-                    <source src="assets/video/Pick_Eat.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                  </video>
-                  <button [ngClass]="'btn btn-primary'" (click)="closeModal('modal1');">Close</button>
-                </modal-popup>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+        <div [class]="'container fullContent'" [id]="'desktop'">
+            <div [class]="'content'">
+                <div [class]="'textContent'">
+                    <h1>{{ "work_title" | translate }}</h1>
 
 
-    <div [class]="'container fullContent'" [id]="'mobile'">
-      <div [class]="'content'">
-        <div [class]="'textContent'">
-          <h1>{{ "work_title" | translate }}</h1>
-            <div [class]="'flex projects'" *ngFor="let item of projects; let idx = index">
+                    <div [class]="'flex projects'" *ngFor="let item of projects; let idx = index">
+                        <a [href]="item.github" [target]="'_blank'"><img [src]="item.image"></a>
+                        <div [class]="'flexCont even'">
+                            <h2>{{ item.title | translate}}</h2>
+                            <div [class]="'textZone'">
+                                <p *ngFor="let p of item.content">
+                                    {{ p | translate }}
+                                </p>
+                                <a *ngIf="item.video"><fa-icon [icon]="faFilm" [class]="'icon me-4'"
+                                        (click)="openModal('modal1')"></fa-icon></a>
+                                <a [href]="item.github" [target]="'_blank'"><fa-icon [icon]="faGithub"
+                                        [class]="'icon'"></fa-icon></a>
 
-              <div [class]="'flexCont even'">
-                <h2>{{ item.title | translate }}</h2>
-                <div [class]="'textZone'">
-                  <p *ngFor="let p of item.content">
-                    {{ p | translate }}
-                  </p>
-                  <a *ngIf="item.video"><fa-icon [icon]="faFilm" [class]="'icon me-4'" (click)="openModal('modal1')"></fa-icon></a>
-                  <a [href]="item.github" [target]="'_blank'"><fa-icon [icon]="faGithub" [class]="'icon'"></fa-icon></a>
-
+                                <modal-popup id="modal1">
+                                    <video width="100%" height="100%" controls>
+                                        <source src="assets/video/Pick_Eat.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <button [ngClass]="'btn btn-primary'" (click)="closeModal('modal1');">Close</button>
+                                </modal-popup>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <a [href]="item.github" [target]="'_blank'"><img [src]="item.image" [class]="'py-5'"></a>
             </div>
         </div>
-      </div>
-    </div>
-    <app-social-media></app-social-media>
-  </div>
-</div>
 
+
+        <div [class]="'container fullContent'" [id]="'mobile'">
+            <div [class]="'content'">
+                <div [class]="'textContent'">
+                    <h1>{{ "work_title" | translate }}</h1>
+                    <div [class]="'flex projects'" *ngFor="let item of projects; let idx = index">
+
+                        <div [class]="'flexCont even'">
+                            <h2>{{ item.title | translate }}</h2>
+                            <div [class]="'textZone'">
+                                <p *ngFor="let p of item.content">
+                                    {{ p | translate }}
+                                </p>
+                                <a *ngIf="item.video"><fa-icon [icon]="faFilm" [class]="'icon me-4'"
+                                        (click)="openModal('modal1')"></fa-icon></a>
+                                <a [href]="item.github" [target]="'_blank'"><fa-icon [icon]="faGithub"
+                                        [class]="'icon'"></fa-icon></a>
+
+                            </div>
+                        </div>
+                        <a [href]="item.github" [target]="'_blank'"><img [src]="item.image" [class]="'py-5'"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <app-social-media></app-social-media>
+    </div>
+</div>

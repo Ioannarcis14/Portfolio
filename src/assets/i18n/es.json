@@ -1,38 +1,30 @@
 {
-  "language": "idioma",
-
-  "home": "Inicio",
-  "home_title": "Hey! soy Ioan",
-  "home_subtitle": "Desarrollador Front-end y diseñador web",
-  "home_text": "Me manejo bien desarrollando aplicaciones web y mobile, siempre procuro adquirir conocimientos y mantenerme actualizado",
-
-  "aboutme": "Bio",
-  "aboutme_title": "Sobre mí",
-  "aboutme_text": "¡Hola! Me llamo Ioan y empecé a programar cuando tenía 17 años, actualmente desarrollo: páginas web, e-commerce, programas y puedo diseñar webs pixel perfect. También he participado en eventos Hackathon como Lleida Hackeps. Desarrollo algún proyecto personal de vez en cuando y soy usuario de Linux!",
-  "aboutme_text2": "Estas serían las tecnologías que manejo, Teniendo también en cuanta cosas como control de versiones, base de datos, metodologías Agile... En cualquier caso en Linkedin tengo la lista completa",
-
-  "work": "Proyectos",
-  "work_title": "Algún que otro proyecto",
-
-  "work_project1_title": "Pickeat (Web)",
-  "work_project1_text1": "Pickeat es una página para reservar una mesa o pedir a domicilio. Pickeat web te deja crear tu restaurante y modificar los datos en cualquier momento ",
-  "work_project1_text2": "Hecho con CodeIgniter",
-
-  "work_project2_title": "Pickeat (App)",
-  "work_project2_text1": "Pickeat es una página para reservar una mesa o pedir a domicilio. Pickeat App es una aplicación para clientes que te permite hacer pedidos de tu comida de los restaurantes asociados, pilla la información de Pickeat Web.",
-  "work_project2_text2": "Hecha con Angular e Ionic",
-
-  "work_project3_title": "+Cota",
-  "work_project3_text1": "+Cota es una aplicación para poder buscar compañía a tu mascota. Puedes darle a like a las mascotas que más te gustan",
-  "work_project3_text2": "Hecha con Angular e Ionic, base de datos Firebase",
-
-  "experience": "Experiencia",
-  "experience_title": "He trabajado para...",
-  "experience_job1_title": "IMPORTMÀTICA IMPORTACIÓ/EXPORTACIÓ",
-  "experience_job1_text1": "Mantenimiento de dispositivos informáticos",
-  "experience_job1_text2": "Administración multimedia",
-
-  "experience_job2_title": "JUST DIGITAL SL.",
-  "experience_job2_text1": "Diseñador Web",
-  "experience_job2_text2": "Programador Front"
+	"language": "idioma",
+	"home": "Inicio",
+	"home_title": "Hey! soy Ioan",
+	"home_subtitle": "Desarrollador Front-end y diseñador web",
+	"home_text": "Me manejo bien desarrollando aplicaciones web y mobile, siempre procuro adquirir conocimientos y mantenerme actualizado",
+	"aboutme": "Bio",
+	"aboutme_title": "Sobre mí",
+	"aboutme_text": "¡Hola! Me llamo Ioan y empecé a programar cuando tenía 17 años, actualmente desarrollo: páginas web, e-commerce, programas y puedo diseñar webs pixel perfect. También he participado en eventos Hackathon como Lleida Hackeps. Desarrollo algún proyecto personal de vez en cuando y soy usuario de Linux!",
+	"aboutme_text2": "Estas serían las tecnologías que manejo, Teniendo también en cuanta cosas como control de versiones, base de datos, metodologías Agile... En cualquier caso en Linkedin tengo la lista completa",
+	"work": "Proyectos",
+	"work_title": "Algún que otro proyecto",
+	"work_project1_title": "Pickeat (Web)",
+	"work_project1_text1": "Pickeat es una página para reservar una mesa o pedir a domicilio. Pickeat web te deja crear tu restaurante y modificar los datos en cualquier momento ",
+	"work_project1_text2": "Hecho con CodeIgniter",
+	"work_project2_title": "Pickeat (App)",
+	"work_project2_text1": "Pickeat es una página para reservar una mesa o pedir a domicilio. Pickeat App es una aplicación para clientes que te permite hacer pedidos de tu comida de los restaurantes asociados, pilla la información de Pickeat Web.",
+	"work_project2_text2": "Hecha con Angular e Ionic",
+	"work_project3_title": "+Cota",
+	"work_project3_text1": "+Cota es una aplicación para poder buscar compañía a tu mascota. Puedes darle a like a las mascotas que más te gustan",
+	"work_project3_text2": "Hecha con Angular e Ionic, base de datos Firebase",
+	"experience": "Experiencia",
+	"experience_title": "He trabajado para...",
+	"experience_job1_title": "IMPORTMÀTICA IMPORTACIÓ/EXPORTACIÓ",
+	"experience_job1_text1": "Mantenimiento de dispositivos informáticos",
+	"experience_job1_text2": "Administración multimedia",
+	"experience_job2_title": "JUST DIGITAL SL.",
+	"experience_job2_text1": "Diseñador Web",
+	"experience_job2_text2": "Programador Front"
 }

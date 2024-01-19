@@ -6,16 +6,16 @@ import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
-  selector: 'app-social-media',
-  templateUrl: './social-media.component.html',
-  styleUrls: ['./social-media.component.scss']
+	selector: 'app-social-media',
+	templateUrl: './social-media.component.html',
+	styleUrls: ['./social-media.component.scss']
 })
 export class SocialMediaComponent implements OnInit {
-  faCoffee = faCoffee; faGithub = faGithub; faLinkedin = faLinkedin; faWhatsapp = faWhatsapp; faEnvelope = faEnvelope;
+	faCoffee = faCoffee; faGithub = faGithub; faLinkedin = faLinkedin; faWhatsapp = faWhatsapp; faEnvelope = faEnvelope;
 
-  constructor() { }
+	constructor() { }
 
-  ngOnInit(): void {
-  }
+	ngOnInit(): void {
+	}
 
 }

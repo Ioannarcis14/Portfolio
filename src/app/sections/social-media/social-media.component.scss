@@ -1,126 +1,124 @@
 @font-face {
-  font-family: 'Julius'; /*a name to be used later*/
-  src: url('/Portfolio/assets/fonts/JuliusSansOne-Regular.ttf');
+	font-family: 'Julius';
+	/*a name to be used later*/
+	src: url('/Portfolio/assets/fonts/JuliusSansOne-Regular.ttf');
 }
 
 @font-face {
-  font-family: "Armata";
-  src: url("/Portfolio/assets/fonts/Armata-Regular.ttf");
+	font-family: "Armata";
+	src: url("/Portfolio/assets/fonts/Armata-Regular.ttf");
 }
 
 aside {
-  position: fixed;
-  bottom: 10px;
-  left: 40px;
+	position: fixed;
+	bottom: 10px;
+	left: 40px;
 
-  ul {
-    display: flex;
-    flex-direction: column;
-    -webkit-box-align: center;
-    align-items: center;
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-    animation: fadeInUp 1s ease-in both;
+	ul {
+		display: flex;
+		flex-direction: column;
+		-webkit-box-align: center;
+		align-items: center;
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+		animation: fadeInUp 1s ease-in both;
 
-    .hide {
-      display: none;
-      cursor: pointer;
-      position: absolute;
-      width: 100px;
-      margin: -27px 40px;
-    }
+		.hide {
+			display: none;
+			cursor: pointer;
+			position: absolute;
+			width: 100px;
+			margin: -27px 40px;
+		}
 
-     li > a:hover > .whatsapp + .hide {
-      cursor: pointer;
-      display: block;
-      color: #ffd05b;
-      position: absolute;
-      width: 200px;
-      animation: fadeInLeft 1s ease-in both;
-    }
+		li>a:hover>.whatsapp+.hide {
+			cursor: pointer;
+			display: block;
+			color: #ffd05b;
+			position: absolute;
+			width: 200px;
+			animation: fadeInLeft 1s ease-in both;
+		}
 
-    li {
-      padding: 10px 0px;
+		li {
+			padding: 10px 0px;
 
-      a {
-        cursor: pointer;
+			a {
+				cursor: pointer;
 
-        .icon {
-          color: #D4D8E5;
-          width: 20px;
-          height: 20px;
-          font-size: 22px;
-        }
-      }
+				.icon {
+					color: #D4D8E5;
+					width: 20px;
+					height: 20px;
+					font-size: 22px;
+				}
+			}
 
-      a:hover {
-        animation: fadeInRotate 1s linear both;
-        .icon {
-          color: #ffd05b;
+			a:hover {
+				animation: fadeInRotate 1s linear both;
 
-          svg {
+				.icon {
+					color: #ffd05b;
 
-          }
-        }
-      }
-    }
-  }
+					svg {}
+				}
+			}
+		}
+	}
 
-  ul::after {
-    content: "";
-    display: block;
-    width: 1px;
-    height: 90px;
-    margin: 0px auto;
-    background-color: #D4D8E5;
-  }
+	ul::after {
+		content: "";
+		display: block;
+		width: 1px;
+		height: 90px;
+		margin: 0px auto;
+		background-color: #D4D8E5;
+	}
 
 }
 
 @media (max-width: 1100px) {
-  aside {
-    position: unset;
-    padding: 70px 0px;
+	aside {
+		position: unset;
+		padding: 70px 0px;
 
-    ul {
-      flex-direction: row;
-      float: left;
+		ul {
+			flex-direction: row;
+			float: left;
 
-      li {
-        padding: 0px 10px;
-      }
+			li {
+				padding: 0px 10px;
+			}
 
-      a:hover > whatsapp + .hide {
-        animation: fadeIn 1s ease-in both;
-      }
+			a:hover>whatsapp+.hide {
+				animation: fadeIn 1s ease-in both;
+			}
 
-      .hide {
-        display: none;
-        position: absolute;
-        width: 100px;
-        margin: 5px 0px;
-      }
+			.hide {
+				display: none;
+				position: absolute;
+				width: 100px;
+				margin: 5px 0px;
+			}
 
-    }
+		}
 
-    ul::before {
-      content: "";
-      display: block;
-      width: 60px;
-      height: 1px;
-      margin: 0px auto;
-      background-color: #D4D8E5;
-    }
+		ul::before {
+			content: "";
+			display: block;
+			width: 60px;
+			height: 1px;
+			margin: 0px auto;
+			background-color: #D4D8E5;
+		}
 
-    ul::after {
-      content: none;
-    }
+		ul::after {
+			content: none;
+		}
 
 
 
-  }
+	}
 
 }
-
-

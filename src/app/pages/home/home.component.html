@@ -1,21 +1,18 @@
 <div [id]="'fullContent'">
-  <div [class]="'body'">
-    <div [id]="'background'"></div>
+	<div [class]="'body'">
+		<div [id]="'background'"></div>
 
+		<app-header-nav></app-header-nav>
 
-    <app-header-nav></app-header-nav>
-    <div [class]="'container fullContent'">
-
-
-      <div [class]="'content'">
-        <div [class]="'textContent'">
-          <h1>{{'home_title' | translate}}</h1>
-          <h1 [class]="'secondary'">{{'home_subtitle' | translate}}</h1>
-          <p>{{'home_text' | translate}}</p>
-        </div>
-      </div>
-    </div>
-    <app-social-media></app-social-media>
-
-  </div>
+		<div [class]="'container fullContent'">
+			<div [class]="'content'">
+				<div [class]="'textContent'">
+					<h1>{{'home_title' | translate}}</h1>
+					<h1 [class]="'secondary'">{{'home_subtitle' | translate}}</h1>
+					<p>{{'home_text' | translate}}</p>
+				</div>
+			</div>
+		</div>
+		<app-social-media></app-social-media>
+	</div>
 </div>
